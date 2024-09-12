@@ -43,7 +43,7 @@
 
     <script src="./js/script.js"></script>
     <script>
-        const socket = new WebSocket("ws://localhost:8080");
+        const socket = new WebSocket("wss://chat-com-node.onrender.com");
 
         socket.onopen = () => {
             console.log("WebSocket connection established");
