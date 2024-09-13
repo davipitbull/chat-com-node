@@ -23,12 +23,9 @@
 
         <section class="chat">
             <section class="chat__messages">
-                <!-- <div class="message--self">Hello, World!</div>
+               
 
-                <div class="message--other">
-                    <span class="message--sender">Manual do Dev</span>
-                    Olá, Mundo!
-                </div> -->
+                
             </section>
 
             <form class="chat__form">
@@ -42,25 +39,6 @@
     </section>
 
     <script src="./js/script.js"></script>
-    <script>
-        const socket = new WebSocket("wss://chat-com-node.onrender.com");
-
-        socket.onopen = () => {
-            console.log("WebSocket connection established");
-            socket.send("Hello from the client");
-        };
-
-        socket.onmessage = (event) => {
-            console.log("Message from server:", event.data);
-        };
-
-        socket.onerror = (error) => {
-            console.error("WebSocket error:", error);
-        };
-
-        socket.onclose = () => {
-            console.log("WebSocket connection closed");
-        };
-    </script>
+    
 </body>
 </html>

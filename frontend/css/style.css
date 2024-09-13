@@ -89,6 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    overflow-y: auto; /* Adicione isso para rolagem */
 }
 
 .chat__form {
@@ -125,14 +126,18 @@ body {
     font-size: 1.8rem;
 }
 
+/* Estilos para as mensagens */
 .chat__messages > div {
     padding: 10px;
     width: 100%;
-    max-width: 250px;
+    max-width: 250px; /* Limita a largura da mensagem */
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 15px;
     line-height: 22px;
+    word-wrap: break-word; /* Garante que as palavras muito longas sejam quebradas */
+    overflow-wrap: break-word; /* Garante que o conteúdo seja mantido dentro da caixinha */
+    white-space: pre-wrap; /* Mantém quebras de linha no texto */
 }
 
 .message--self {
